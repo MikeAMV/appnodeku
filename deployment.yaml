@@ -23,13 +23,13 @@ kind: Service
 metadata:
   name: knodeapp-service
 spec:
+  type: ClusterIP
   selector:
     app: knodeapp
   ports:
     - protocol: TCP
       port: 3000
       targetPort: 3000
-  type: ClusterIP
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
