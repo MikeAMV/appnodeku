@@ -42,7 +42,7 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-    - echo.my-domain.org
+    - knodeapp.erielit.molcajete.dev
     secretName: letsencrypt-nginx
   rules:
   - host: knodeapp.erielit.molcajete.dev
