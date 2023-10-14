@@ -29,7 +29,7 @@ spec:
     - protocol: TCP
       port: 3000
       targetPort: 3000
-  type: ClusterIp
+  type: ClusterIP
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
