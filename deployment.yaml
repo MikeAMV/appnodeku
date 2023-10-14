@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: knodeapp
-          image: erielit/nodeapp:<IMAGE_TAG>
+          image: erielit/devops:<IMAGE_TAG>
           ports:
             - containerPort: 3000
 ---
