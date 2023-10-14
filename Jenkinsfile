@@ -2,6 +2,12 @@ node {
     def gitcommit
     def contenedortest = docker.image('node:18')
 
+    stage('Clean Workspace') {
+        steps {
+            cleanWs()
+        }
+    } 
+
     stage('test'){
         sh "echo 'test'"
         sh "git status"
